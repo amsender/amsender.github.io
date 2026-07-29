@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amarjeet Kushwaha — Data Scientist & ML / AI Engineer</title>
+  <meta name="description" content="Amarjeet Kushwaha — Data Scientist & ML/AI Engineer. MSc Data Science (Merit), University of Surrey. Building ML and agentic AI systems from research to production." />
+  <meta name="author" content="Amarjeet Kushwaha" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Amarjeet Kushwaha — Data Scientist & ML / AI Engineer" />
+  <meta property="og:description" content="Building ML and agentic AI systems — from research to production." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__brand">AK<span>.</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--ghost btn--sm" href="assets/Amarjeet_Kushwaha_CV.pdf" download>Download CV</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme">
+          <span class="theme-icon theme-icon--sun">☀</span>
+          <span class="theme-icon theme-icon--moon">☾</span>
+        </button>
+        <button class="icon-btn nav__burger" id="burger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero wrap">
+      <div class="hero__grid">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow">Data Scientist · ML / AI Engineer</p>
+          <h1 class="hero__title">
+            I take models from <span class="grad">research</span> to
+            <span class="grad">deployed, production-grade systems</span>.
+          </h1>
+          <p class="hero__lede">
+            MSc Data Science (Merit) from the University of Surrey with three years of
+            digital-operations experience. I build across the full stack of modern data work —
+            classical ML, transformers &amp; NLP, agentic AI, data pipelines and cloud deployment.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/amsender" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/amarjit-kushwaha" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:amarjitkushwaha6@gmail.com">Email</a>
+            <span class="hero__loc">New Malden, London&nbsp;·&nbsp;UK</span>
+          </div>
+        </div>
+
+        <div class="hero__aside reveal">
+          <div class="avatar">
+            <!-- Drop your photo in as assets/profile.jpg — falls back to an "AK" monogram until you do. -->
+            <img src="assets/profile.jpg" alt="Amarjeet Kushwaha"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="avatar__monogram" style="display:none;">AK</div>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>97.9%</strong><span>F1 · phishing detection</span></li>
+            <li><strong>0.82</strong><span>PR-AUC · fraud model</span></li>
+            <li><strong>Multi-agent</strong><span>AI shopping assistant</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section id="projects" class="section wrap">
+      <div class="section__head reveal">
+        <p class="section__kicker">Selected work</p>
+        <h2 class="section__title">Featured projects</h2>
+        <p class="section__sub">End-to-end builds — each with real results, not screenshots of a template.</p>
+      </div>
+
+      <!-- Project 1 — Velour -->
+      <article class="project reveal">
+        <div class="project__media">
+          <img src="assets/img/velour-architecture.svg" alt="Velour microservices platform architecture" loading="lazy" />
+        </div>
+        <div class="project__body">
+          <p class="project__index">01 — Full-stack · AI Engineering</p>
+          <h3 class="project__title">Velour — AI-Powered E-Commerce Microservices Platform</h3>
+          <p class="project__desc">
+            A complete UK online marketplace built on a microservices architecture, featuring
+            <strong>Vera</strong> — an agentic AI shopping assistant. Five independent FastAPI services
+            sit behind an Nginx API gateway with a React single-page frontend; each service owns its own
+            MongoDB database, with JWT auth and atomic stock updates that stay correct under concurrent buyers.
+          </p>
+          <p class="project__desc">
+            Vera is a <strong>multi-agent system</strong> built on the Google Agent Development Kit with
+            Mistral Large — a coordinator routes each message to Discovery, Order, Cart or Advisor
+            specialists, and adding to the basket uses a human-in-the-loop two-turn confirmation so the
+            model can never buy on your behalf by mistake.
+          </p>
+          <ul class="tags">
+            <li>React</li><li>FastAPI</li><li>MongoDB</li><li>Docker</li><li>Nginx</li>
+            <li>Google ADK</li><li>Mistral Large</li><li>JWT</li>
+          </ul>
+          <div class="project__metrics">
+            <span><strong>5</strong> microservices</span>
+            <span><strong>685</strong> products · 16 categories</span>
+            <span><strong>4</strong> specialist AI agents</span>
+          </div>
+          <div class="project__links">
+            <a class="btn btn--primary btn--sm" href="https://github.com/amsender" target="_blank" rel="noopener">View code →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 — Phishing -->
+      <article class="project project--reverse reveal">
+        <div class="project__media">
+          <img src="assets/img/phishing-comparison.png" alt="Model comparison — phishing detection" loading="lazy" />
+        </div>
+        <div class="project__body">
+          <p class="project__index">02 — MSc Dissertation · NLP &amp; Security</p>
+          <h3 class="project__title">Phishing Detection &amp; Adversarial Robustness</h3>
+          <p class="project__desc">
+            A reproducible pipeline over <strong>18,650 labelled emails</strong> — 13 statistical and
+            security indicators plus 5,000 TF-IDF features, class-balanced to 22,644 samples. I benchmarked
+            six classical classifiers against a fine-tuned <strong>DistilBERT</strong>, which reached
+            <strong>97.90% F1</strong> and <strong>99.78% ROC-AUC</strong>.
+          </p>
+          <p class="project__desc">
+            The novel angle is robustness: an automated FGSM adversarial evaluation across attack strengths.
+            At ε = 0.10, DistilBERT's accuracy fell just <strong>0.02 points</strong> — versus
+            <strong>26.14</strong> for Random Forest — quantifying which models you can actually trust
+            under attack.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>PyTorch</li><li>Transformers</li><li>DistilBERT</li>
+            <li>scikit-learn</li><li>TF-IDF</li><li>FGSM</li>
+          </ul>
+          <div class="project__metrics">
+            <span><strong>97.9%</strong> F1-score</span>
+            <span><strong>99.78%</strong> ROC-AUC</span>
+            <span><strong>7</strong> models compared</span>
+          </div>
+          <div class="project__links">
+            <a class="btn btn--primary btn--sm" href="https://github.com/amsender" target="_blank" rel="noopener">View code →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 — Fraud -->
+      <article class="project reveal">
+        <div class="project__media">
+          <img src="assets/img/fraud-shipping.png" alt="Fraud risk signal — shipping distance analysis" loading="lazy" />
+        </div>
+        <div class="project__body">
+          <p class="project__index">03 — Data Science · Risk Modelling</p>
+          <h3 class="project__title">Transaction Fraud Detection &amp; Risk Modelling</h3>
+          <p class="project__desc">
+            Modelling fraud in <strong>299,695 e-commerce transactions</strong> with a heavily imbalanced
+            2.21% fraud rate. I engineered 21 behavioural and cyclical time predictors in R, then trained an
+            <strong>XGBoost</strong> model with a weighted ensemble, 44.32 class weighting and a comparison of
+            four categorical encoders.
+          </p>
+          <p class="project__desc">
+            The model reached <strong>0.974 ROC-AUC</strong> and <strong>0.820 PR-AUC</strong>, catching
+            <strong>87% of fraud</strong> (1,150 of 1,322 cases). Beyond the metrics, it surfaced actionable
+            signals: a failed AVS check carried 9.67% fraud versus 0.76% when matched, and median shipping
+            distance was 626 km for fraud versus 269 km otherwise.
+          </p>
+          <ul class="tags">
+            <li>R</li><li>Python</li><li>XGBoost</li><li>scikit-learn</li>
+            <li>Imbalanced classification</li>
+          </ul>
+          <div class="project__metrics">
+            <span><strong>0.974</strong> ROC-AUC</span>
+            <span><strong>0.820</strong> PR-AUC</span>
+            <span><strong>87%</strong> fraud recall</span>
+          </div>
+          <div class="project__links">
+            <a class="btn btn--primary btn--sm" href="https://github.com/amsender" target="_blank" rel="noopener">View code →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 — Biomedical NER -->
+      <article class="project project--reverse reveal">
+        <div class="project__media">
+          <div class="codecard" aria-hidden="true">
+            <div class="codecard__bar"><span></span><span></span><span></span>
+              <em>POST /api/chat</em>
+            </div>
+<pre class="codecard__body">{
+  <span class="k">"text"</span>: <span class="s">"Patient took ibuprofen
+           for rheumatoid arthritis"</span>,
+  <span class="k">"entities"</span>: [
+    { <span class="k">"word"</span>: <span class="s">"ibuprofen"</span>,
+      <span class="k">"type"</span>: <span class="e">"DRUG"</span> },
+    { <span class="k">"word"</span>: <span class="s">"rheumatoid arthritis"</span>,
+      <span class="k">"type"</span>: <span class="d">"DISEASE"</span> }
+  ]
+}</pre>
+          </div>
+        </div>
+        <div class="project__body">
+          <p class="project__index">04 — NLP · Deep Learning</p>
+          <h3 class="project__title">Biomedical Entity Recognition Chatbot</h3>
+          <p class="project__desc">
+            A fine-tuned <strong>BioBERT</strong> model that extracts drug and disease entities from
+            free-text clinical messages using BIO token tagging. Served through a Flask app that loads the
+            tokenizer and model once at startup, runs gradient-free PyTorch inference, and reconstructs
+            subword tokens back into clean, structured JSON.
+          </p>
+          <p class="project__desc">
+            The prototype adds request validation, rule-based responses, JSONL prediction logging for error
+            analysis, and a lightweight chat interface — with the fine-tuned model published on Hugging Face.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>BioBERT</li>
+            <li>Flask</li><li>REST API</li>
+          </ul>
+          <div class="project__metrics">
+            <span><strong>DRUG</strong> + <strong>DISEASE</strong> NER</span>
+            <span>Deployed on <strong>Hugging Face</strong></span>
+          </div>
+          <div class="project__links">
+            <a class="btn btn--primary btn--sm" href="https://github.com/amsender" target="_blank" rel="noopener">View code →</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ MORE PROJECTS ============ -->
+    <section class="section wrap">
+      <div class="section__head reveal">
+        <p class="section__kicker">Also in the toolbox</p>
+        <h2 class="section__title">More projects</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <p class="card__index">Reinforcement Learning</p>
+          <h3 class="card__title">Autonomous Lunar Landing</h3>
+          <p class="card__desc">
+            Trained and benchmarked DQN and PPO agents on Gymnasium's LunarLander-v3 over 300k timesteps and
+            100 seeded test episodes. DQN reached a 152.9 mean reward and <strong>53% landing success</strong>,
+            outperforming PPO (105.1 / 17%) under the same budget.
+          </p>
+          <ul class="tags">
+            <li>Stable-Baselines3</li><li>Gymnasium</li><li>PyTorch</li><li>DQN</li><li>PPO</li>
+          </ul>
+          <a class="card__link" href="https://github.com/amsender" target="_blank" rel="noopener">View code →</a>
+        </article>
+
+        <article class="card reveal">
+          <p class="card__index">Cloud · Serverless</p>
+          <h3 class="card__title">Serverless Profitability Dashboard</h3>
+          <p class="card__desc">
+            A Flask service querying BigQuery for 7-day rolling revenue, cost and profit by category,
+            containerised with Docker + Gunicorn and deployed as an autoscaling
+            <strong>Google Cloud Run</strong> service with managed HTTPS and interactive Chart.js views.
+          </p>
+          <ul class="tags">
+            <li>Google Cloud Run</li><li>BigQuery</li><li>Flask</li><li>Docker</li><li>Chart.js</li>
+          </ul>
+          <a class="card__link" href="https://github.com/amsender" target="_blank" rel="noopener">View code →</a>
+        </article>
+
+        <article class="card reveal">
+          <p class="card__index">Data Engineering · SQL</p>
+          <h3 class="card__title">3NF Migration &amp; SQL Optimisation</h3>
+          <p class="card__desc">
+            Designed a nine-table 3NF SQL Server schema and migrated legacy data — aggregating 46,041 line
+            items into 16,787 order records while reconciling <strong>£2,789,946.60</strong> exactly, with
+            10 targeted indexes and a BI-ready handoff to SSAS.
+          </p>
+          <ul class="tags">
+            <li>SQL Server</li><li>T-SQL</li><li>3NF modelling</li><li>Indexing</li><li>SSAS</li>
+          </ul>
+          <a class="card__link" href="https://github.com/amsender" target="_blank" rel="noopener">View code →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section wrap">
+      <div class="section__head reveal">
+        <p class="section__kicker">What I work with</p>
+        <h2 class="section__title">Skills &amp; tools</h2>
+      </div>
+      <div class="skills">
+        <div class="skill reveal">
+          <h3>Languages &amp; Data</h3>
+          <ul class="tags tags--lg">
+            <li>Python</li><li>R</li><li>SQL</li><li>JavaScript</li><li>pandas</li><li>NumPy</li><li>Matplotlib</li>
+          </ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Machine Learning</h3>
+          <ul class="tags tags--lg">
+            <li>scikit-learn</li><li>XGBoost</li><li>Ensemble learning</li><li>Imbalanced classification</li><li>ROC / PR-AUC</li>
+          </ul>
+        </div>
+        <div class="skill reveal">
+          <h3>NLP &amp; Deep Learning</h3>
+          <ul class="tags tags--lg">
+            <li>PyTorch</li><li>Hugging Face</li><li>DistilBERT</li><li>BioBERT</li><li>TF-IDF</li><li>Adversarial robustness</li>
+          </ul>
+        </div>
+        <div class="skill reveal">
+          <h3>AI Engineering</h3>
+          <ul class="tags tags--lg">
+            <li>Google ADK</li><li>Multi-agent systems</li><li>LLM integration</li><li>Mistral</li><li>Tool-calling</li>
+          </ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Backend &amp; Web</h3>
+          <ul class="tags tags--lg">
+            <li>FastAPI</li><li>Flask</li><li>REST APIs</li><li>JWT</li><li>React</li><li>Nginx</li>
+          </ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Data Eng &amp; Cloud</h3>
+          <ul class="tags tags--lg">
+            <li>SQL Server</li><li>MySQL</li><li>BigQuery</li><li>ETL</li><li>Docker</li><li>Google Cloud Run</li><li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section wrap">
+      <div class="about reveal">
+        <div class="about__text">
+          <p class="section__kicker">About</p>
+          <h2 class="section__title">From research to something people can actually use</h2>
+          <p>
+            I'm a Data Science MSc graduate (Merit) from the University of Surrey with three years of
+            hands-on digital-operations experience. What ties my work together is a bias toward
+            <strong>shipping</strong>: I'm as comfortable fine-tuning a transformer and stress-testing it
+            against adversarial attacks as I am wiring it into a containerised service behind an API gateway.
+          </p>
+          <p>
+            My recent work spans classical ML and risk modelling, transformer-based NLP, agentic AI systems,
+            relational data engineering and cloud deployment — and I care about the parts that make a model
+            trustworthy in production: robustness, reproducibility and clean interfaces.
+          </p>
+        </div>
+        <div class="about__side">
+          <h3>Education</h3>
+          <ul class="timeline">
+            <li>
+              <span class="timeline__date">Feb 2025 — Jan 2026</span>
+              <strong>MSc Data Science (IT), Merit</strong>
+              <em>University of Surrey</em>
+            </li>
+            <li>
+              <span class="timeline__date">2017 — 2021</span>
+              <strong>B.Tech Computer Science &amp; Engineering</strong>
+              <em>ITM Vocational University · GPA 7.86</em>
+            </li>
+          </ul>
+          <h3>Experience</h3>
+          <ul class="timeline">
+            <li>
+              <span class="timeline__date">Oct 2021 — Nov 2024</span>
+              <strong>Website Manager</strong>
+              <em>Jashoda Industry</em>
+            </li>
+            <li>
+              <span class="timeline__date">Jan 2021 — Oct 2021</span>
+              <strong>WordPress Developer &amp; SEO Intern</strong>
+              <em>Dipeshpreneur</em>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section wrap">
+      <div class="contact reveal">
+        <p class="section__kicker">Contact</p>
+        <h2 class="section__title">Let's build something</h2>
+        <p class="contact__lede">
+          Open to Data Scientist, ML / AI Engineer, and Data / ML Platform roles in the UK.
+          The fastest way to reach me is email.
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:amarjitkushwaha6@gmail.com">amarjitkushwaha6@gmail.com</a>
+          <a class="btn btn--ghost" href="https://linkedin.com/in/amarjit-kushwaha" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="https://github.com/amsender" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="assets/Amarjeet_Kushwaha_CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year"></span> Amarjeet Kushwaha</span>
+      <span>Built &amp; designed from scratch · New Malden, London</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
